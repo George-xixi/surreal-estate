@@ -9,5 +9,5 @@ describe("App", () => {
 
     expect(asFragment()).toMatchSnapshot();
     expect(h1Element).toBeInTheDocument();
-  })
-})
+  });
+});
