@@ -10,13 +10,13 @@ I will add a screenshot of the mobile view here:
 
 ## The task requirements
 
--Build a single page React web application.
+- Build a single page React web application.
 
--A search function that allows users to search all properties and filter results.
+- A search function that allows users to search all properties and filter results.
 
--An add property page where you will add new properties.
+- An add property page where you will add new properties.
 
--A property page.
+- A property page.
 
 -Interact with an API to get the properties.
 
@@ -24,12 +24,11 @@ I will add a screenshot of the mobile view here:
 
 - Create React Router to define and navigate between routes.
 
--Create forms in react.
+- Create forms in react.
 
+- Make requests in Postman to an external API and translate these requests into my React application.
 
--Make requests in Postman to an external API and translate these requests into my React application.
-
--Implement 3rd party authentication.
+- Implement 3rd party authentication.
 
 
 ## API
@@ -40,7 +39,6 @@ This app uses an API, I will update with more info soon.
 This app is tested with [Jest](https://jestjs.io/) and [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/).
 
 ## Packages
-- [Axios](https://axios-http.com/docs/intro)
 - [PropTypes](https://www.npmjs.com/package/prop-types)
 - [React Icons](https://react-icons.github.io/react-icons/)
 
@@ -76,6 +74,6 @@ Once I have finished the project, I will reflect here on what more I would do if
 
 ## Thanks
 
--Thanks to all the tutors at [Command Shift](https://www.commandshift.co/)!
+- Thanks to all the tutors at [Command Shift](https://www.commandshift.co/)!
 
 ### George - 2023
