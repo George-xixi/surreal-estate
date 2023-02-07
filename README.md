@@ -18,7 +18,7 @@ I will add a screenshot of the mobile view here:
 
 - A property page.
 
--Interact with an API to get the properties.
+- Interact with an API to get the properties.
 
 ### Further requirements
 
