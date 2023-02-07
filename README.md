@@ -1,70 +1,81 @@
-# Getting Started with Create React App
+# Real Estate React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a property search engine built using react.js. It is part of the front end module at [Command Shift](https://www.commandshift.co/). 
 
-## Available Scripts
+This project has only just been started, and the README will be updated as the project grows.
 
-In the project directory, you can run:
+I will put screenshots of the project here:
 
-### `npm start`
+I will add a screenshot of the mobile view here:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## The task requirements
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+-Build a single page React web application.
 
-### `npm test`
+-A search function that allows users to search all properties and filter results.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+-An add property page where you will add new properties.
 
-### `npm run build`
+-A property page.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+-Interact with an API to get the properties.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Further requirements
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Create React Router to define and navigate between routes.
 
-### `npm run eject`
+-Create forms in react.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+-Make requests in Postman to an external API and translate these requests into my React application.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+-Implement 3rd party authentication.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+## API
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+This app uses an API, I will update with more info soon.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Testing
+This app is tested with [Jest](https://jestjs.io/) and [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/).
 
-### Code Splitting
+## Packages
+- [Axios](https://axios-http.com/docs/intro)
+- [PropTypes](https://www.npmjs.com/package/prop-types)
+- [React Icons](https://react-icons.github.io/react-icons/)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
+## How to use
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### Clone repo
 
-### Making a Progressive Web App
+```bash
+git clone https://github.com/George-xixi/surreal-estate
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### Install dependencies
 
-### Advanced Configuration
+```bash
+npm i
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### Launch app locally
 
-### Deployment
+```bash
+npm start
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+### To run tests
 
-### `npm run build` fails to minify
+```bash
+npm test
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## If I had more time...
+Once I have finished the project, I will reflect here on what more I would do if I had more time.
+
+## Thanks
+
+-Thanks to all the tutors at [Command Shift](https://www.commandshift.co/)!
+
+### George - 2023
