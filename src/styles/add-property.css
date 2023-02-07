@@ -1,0 +1,9 @@
+.add-property__heading {
+  position: absolute;
+  margin-top: 100px;
+  margin-left: 50px;
+  padding-left: 10px;
+  border-left: 3px solid rgb(61,78,58);
+  font-size: 35px;
+  color:rgb(61,78,58);
+}

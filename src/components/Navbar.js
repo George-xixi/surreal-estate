@@ -1,6 +1,7 @@
-import "../styles/navbar.css";
-import { BiHomeHeart } from "react-icons/bi";
 import React from "react";
+import { Link } from "react-router-dom";
+import { BiHomeHeart } from "react-icons/bi";
+import "../styles/navbar.css";
 
 const Navbar = () => {
   return (
@@ -9,10 +10,10 @@ const Navbar = () => {
       <h1>surreal estate</h1>
       <ul className="navbar-links">
         <li className="navbar-links-item">
-          <a href="/">view properties</a>
+          <Link to="/">view properties</Link>
         </li>
         <li className="navbar-links-item">
-          <a href="/">add property</a>
+          <Link to="/add-property">add property</Link>
         </li>
       </ul>
     </div>
