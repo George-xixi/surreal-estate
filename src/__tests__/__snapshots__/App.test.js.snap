@@ -45,12 +45,21 @@ exports[`App renders app correctly 1`] = `
           class="navbar-links-item"
         >
           <a
-            href="/"
+            href="/add-property"
           >
             add property
           </a>
         </li>
       </ul>
+    </div>
+    <div
+      class="properties"
+    >
+      <h2
+        class="properties__heading"
+      >
+        Properties
+      </h2>
     </div>
   </div>
 </DocumentFragment>

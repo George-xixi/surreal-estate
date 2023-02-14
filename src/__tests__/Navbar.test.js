@@ -1,10 +1,15 @@
 import React from "react";
 import { render, screen } from "@testing-library/react";
+import { BrowserRouter } from "react-router-dom";
 import Navbar from "../components/Navbar";
 
 describe("Navbar", () => {
   it("renders Navbar correctly", () => {
-    const { asFragment } = render(<Navbar />);
+    const { asFragment } = render(
+      <BrowserRouter>
+        <Navbar />
+      </BrowserRouter>
+    );
     const headingElement = screen.getByText("surreal estate");
     const viewPropertiesLink = screen.getByText("view properties");
     const addPropertyLink = screen.getByText("add property");

@@ -42,7 +42,7 @@ exports[`Navbar renders Navbar correctly 1`] = `
         class="navbar-links-item"
       >
         <a
-          href="/"
+          href="/add-property"
         >
           add property
         </a>

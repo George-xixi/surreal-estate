@@ -1,9 +1,114 @@
-.add-property__heading {
+.add-property {
   position: absolute;
   margin-top: 100px;
   margin-left: 50px;
   padding-left: 10px;
-  border-left: 3px solid rgb(61,78,58);
-  font-size: 35px;
   color:rgb(61,78,58);
 }
+
+.add-property__heading {
+  border-left: 3px solid rgb(61,78,58);
+  padding-left:10px;
+  font-size: 35px;
+}
+
+.add-property__form {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  font-size: 25px;
+  font-weight: 400;
+  max-inline-size: 600px;
+}
+
+.add-property__form>* {
+  display:flex;
+  flex-direction: column;
+  padding-block: 10px;
+  border-left: 3px solid rgb(61,78,58);
+  padding-left:7px;
+}
+
+.add-property__form>div>*{
+  min-height:30px;
+  padding-bottom:10px;
+  font-size: inherit;
+  font:inherit;
+}
+
+.form__title {
+  width: 600px;
+  grid-column: 1 / 6;
+}
+
+.selector__city{
+  grid-column: 1 / span 2;
+}
+
+.selector__type{
+  grid-column: 4 / span 2;
+}
+
+.form__number-input{
+  width:25%;
+}
+
+.number__beds {
+  grid-column: 1;
+}
+
+.number__baths{
+  grid-column: 3;
+}
+
+.number__price{
+  grid-column:5;
+}
+
+.form__email-input{
+  grid-column: 1 / 6;
+}
+.form__number-input>input {
+  width: 100px;
+}
+
+.form__button{
+  grid-column: 1 / span 5;
+}
+
+.form__button>button {
+  border: 3px solid rgb(61, 78, 58);
+  border-radius: 5px;
+  align-self: center;
+  padding-inline: 50px;
+  padding-block: 5px;
+  color: rgb(61, 78, 58);
+  cursor: pointer;
+}
+
+.form__button>button:hover{
+  background-color: rgb(126, 125, 125);
+  border: 3px solid rgb(104, 96, 96);
+  color: whitesmoke;
+}
+
+@media (max-width: 600px) {
+  .add-property {
+    margin-left: 5px;
+    }
+    
+    .add-property__form {
+      display: block;
+      margin-right: 5px;
+      flex-direction: column;
+    }
+    
+    .form__title {
+      width: 100%;
+    }
+    
+    .form__selector {
+      width: 100%;
+    }
+    }
