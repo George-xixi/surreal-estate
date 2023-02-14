@@ -27,6 +27,7 @@
   flex-direction: column;
   padding-block: 10px;
   border-left: 3px solid rgb(61,78,58);
+  border-top: 3px solid rgb(61,78,58);
   padding-left:7px;
 }
 
@@ -51,7 +52,7 @@
 }
 
 .form__number-input{
-  width:25%;
+  width:75%;
 }
 
 .number__beds {
@@ -75,6 +76,7 @@
 
 .form__button{
   grid-column: 1 / span 5;
+  height: min-content;
 }
 
 .form__button>button {
@@ -93,7 +95,7 @@
   color: whitesmoke;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 650px) {
   .add-property {
     margin-left: 5px;
     }
