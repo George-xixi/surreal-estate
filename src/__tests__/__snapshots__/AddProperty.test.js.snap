@@ -1,0 +1,242 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AddProperty renders AddProperty page correctly 1`] = `
+<DocumentFragment>
+  <div
+    class="add-property"
+  >
+    <h2
+      class="add-property__heading"
+    >
+      Add Property
+    </h2>
+    <form
+      class="add-property__form"
+    >
+      <div
+        class="form__title"
+      >
+        <label
+          for="title"
+        >
+          Give your listing a title
+        </label>
+        <input
+          id="title"
+          name="title"
+          value=""
+        />
+      </div>
+      <div
+        class="form__selector selector__city"
+      >
+        <label
+          for="city"
+        >
+          City
+        </label>
+        <select
+          id="city"
+          name="city"
+        >
+          <option
+            value="Manchester"
+          >
+            Manchester
+          </option>
+          <option
+            value="Leeds"
+          >
+            Leeds
+          </option>
+          <option
+            value="Sheffield"
+          >
+            Sheffield
+          </option>
+          <option
+            value="Liverpool"
+          >
+            Liverpool
+          </option>
+        </select>
+      </div>
+      <div
+        class="form__selector selector__type"
+      >
+        <label
+          for="type"
+        >
+          Type
+        </label>
+        <select
+          id="type"
+          name="type"
+        >
+          <option
+            value="Flat"
+          >
+            Flat
+          </option>
+          <option
+            value="Detached"
+          >
+            Detached
+          </option>
+          <option
+            value="Semi-Detached"
+          >
+            Semi-Detached
+          </option>
+          <option
+            value="Terraced"
+          >
+            Terraced
+          </option>
+          <option
+            value="End of Terrace"
+          >
+            End of Terrace
+          </option>
+          <option
+            value="Cottage"
+          >
+            Cottage
+          </option>
+          <option
+            value="Bungalow"
+          >
+            Bungalow
+          </option>
+        </select>
+      </div>
+      <div
+        class="form__number-input number__beds"
+      >
+        <label
+          for="bedrooms"
+        >
+          Beds
+        </label>
+        <input
+          id="bedrooms"
+          inputmode="numeric"
+          min="0"
+          name="bedrooms"
+          type="number"
+          value="0"
+        />
+      </div>
+      <div
+        class="form__number-input number__baths"
+      >
+        <label
+          for="bathrooms"
+        >
+          Baths
+        </label>
+        <input
+          id="bathrooms"
+          inputmode="numeric"
+          min="0"
+          name="bathrooms"
+          type="number"
+          value="0"
+        />
+      </div>
+      <div
+        class="form__number-input number__price"
+      >
+        <label
+          for="price"
+        >
+          Price
+        </label>
+        <input
+          id="price"
+          inputmode="numeric"
+          min="0"
+          name="price"
+          type="number"
+          value="0"
+        />
+      </div>
+      <div
+        class="form__email-input"
+      >
+        <label
+          for="email"
+        >
+          Email
+        </label>
+        <input
+          id="email"
+          name="email"
+          value=""
+        />
+      </div>
+      <div
+        class="form__button"
+      >
+        <button
+          type="submit"
+        >
+          Add
+        </button>
+      </div>
+    </form>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Navbar renders Navbar correctly 1`] = `
+<DocumentFragment>
+  <div
+    class="navbar"
+  >
+    <svg
+      aria-label="Home icon"
+      class="home-icon"
+      fill="currentColor"
+      height="1em"
+      stroke="currentColor"
+      stroke-width="0"
+      viewBox="0 0 24 24"
+      width="1em"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="m12.223 11.641-.223.22-.224-.22a2.224 2.224 0 0 0-3.125 0 2.13 2.13 0 0 0 0 3.07L12 18l3.349-3.289a2.13 2.13 0 0 0 0-3.07 2.225 2.225 0 0 0-3.126 0z"
+      />
+      <path
+        d="m21.707 11.293-9-9a.999.999 0 0 0-1.414 0l-9 9A1 1 0 0 0 3 13h1v7c0 1.103.897 2 2 2h12c1.103 0 2-.897 2-2v-7h1a1 1 0 0 0 .707-1.707zM18.001 20H6v-9.585l6-6 6 6V15l.001 5z"
+      />
+    </svg>
+    <h1>
+      surreal estate
+    </h1>
+    <ul
+      class="navbar-links"
+    >
+      <li
+        class="navbar-links-item"
+      >
+        <a
+          href="/"
+        >
+          view properties
+        </a>
+      </li>
+      <li
+        class="navbar-links-item"
+      >
+        <a
+          href="/add-property"
+        >
+          add property
+        </a>
+      </li>
+    </ul>
+  </div>
+</DocumentFragment>
+`;
