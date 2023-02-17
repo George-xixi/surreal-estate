@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import addProperty from "../requests/addProperty";
 import "../styles/add-property.css";
+import Alert from "./Alert";
 
 const AddProperty = () => {
   const initialState = {
@@ -14,12 +15,17 @@ const AddProperty = () => {
       price: 0,
       email: "",
     },
+    alert: {
+      message: "",
+      isSuccess: false,
+    },
   };
   const [fields, setFields] = useState(initialState.fields);
+  const [alert, setAlert] = useState(initialState.alert);
   const handleAddProperty = (e) => {
     e.preventDefault();
-    addProperty(fields);
-    console.log(fields);
+    setAlert({ message: "", isSuccess: false });
+    addProperty(fields, setAlert);
   };
   const handleFieldChange = (e) => {
     setFields({
@@ -31,6 +37,7 @@ const AddProperty = () => {
   return (
     <div className="add-property">
       <h2 className="add-property__heading">Add Property</h2>
+      <Alert message={alert.message} success={alert.isSuccess} />
       <form onSubmit={handleAddProperty} className="add-property__form">
         <div className="form__title">
           <label htmlFor="title">Give your listing a title</label>
