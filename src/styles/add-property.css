@@ -18,7 +18,7 @@
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(5, 1fr);
   font-size: 25px;
-  font-weight: 400;
+  font-weight: 500;
   max-inline-size: 600px;
 }
 

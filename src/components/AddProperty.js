@@ -1,5 +1,6 @@
 /* eslint-disable jsx-a11y/label-has-associated-control */
 import React, { useState } from "react";
+import addProperty from "../requests/addProperty";
 import "../styles/add-property.css";
 
 const AddProperty = () => {
@@ -17,6 +18,8 @@ const AddProperty = () => {
   const [fields, setFields] = useState(initialState.fields);
   const handleAddProperty = (e) => {
     e.preventDefault();
+    addProperty(fields);
+    console.log(fields);
   };
   const handleFieldChange = (e) => {
     setFields({
