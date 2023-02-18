@@ -1,6 +1,6 @@
 import React from "react";
 import { render, screen } from "@testing-library/react";
-import Propertycard from "../components/PropertyCard";
+import PropertyCard from "../components/PropertyCard";
 
 describe("PropertyCard", () => {
   const validProps = {
@@ -23,7 +23,7 @@ describe("PropertyCard", () => {
 
   it("renders city correctly", () => {
     const { asFragment } = render(<PropertyCard details={validProps} />);
-    const cityElement = screen.getByText("Manchester");
+    const cityElement = screen.getByText(/Manchester/);
 
     expect(asFragment()).toMatchSnapshot();
     expect(cityElement).toHaveTextContent("Manchester - Flat");
@@ -31,7 +31,7 @@ describe("PropertyCard", () => {
 
   it("renders type correctly", () => {
     const { asFragment } = render(<PropertyCard details={validProps} />);
-    const typeElement = screen.getByText("Flat");
+    const typeElement = screen.getByText(/ - Flat/);
 
     expect(asFragment()).toMatchSnapshot();
     expect(typeElement).toHaveTextContent("Manchester - Flat");
@@ -39,7 +39,7 @@ describe("PropertyCard", () => {
 
   it("renders bedrooms correctly", () => {
     const { asFragment } = render(<PropertyCard details={validProps} />);
-    const bedElement = screen.getByText("Beds  1");
+    const bedElement = screen.getByText("Beds - 1");
 
     expect(asFragment()).toMatchSnapshot();
     expect(bedElement).toBeInTheDocument();
@@ -55,7 +55,7 @@ describe("PropertyCard", () => {
 
   it("renders price correctly", () => {
     const { asFragment } = render(<PropertyCard details={validProps} />);
-    const priceElement = screen.getByText("1000");
+    const priceElement = screen.getByText(/1000/);
 
     expect(asFragment()).toMatchSnapshot();
     expect(priceElement).toHaveTextContent("£1000");
