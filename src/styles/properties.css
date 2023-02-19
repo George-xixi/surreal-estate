@@ -2,7 +2,6 @@
   border-left: 3px solid rgb(61,78,58);
   padding-left:10px;
   font-size: 35px;
-  color:rgb(61,78,58);
 }
 
 .properties {
@@ -10,4 +9,5 @@
   margin-top: 100px;
   margin-left: 50px;
   padding-left: 10px;
+  color:rgb(61,78,58);
 }

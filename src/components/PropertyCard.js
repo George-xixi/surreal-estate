@@ -1,5 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
+import "../styles/property-card.css";
 
 const PropertyCard = ({ details }) => {
   const { title, city, type, bedrooms, bathrooms, price, email } = details;
@@ -12,8 +13,10 @@ const PropertyCard = ({ details }) => {
       </p>
       <p>Beds - {bedrooms}</p>
       <p>Baths - {bathrooms}</p>
-      <p>£{price}</p>
-      <a href={mailTo}>Email</a>
+      <p className="card__price">£{price}</p>
+      <a className="mail-to" href={mailTo}>
+        Email
+      </a>
     </div>
   );
 };
