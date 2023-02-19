@@ -66,6 +66,9 @@ describe("PropertyCard", () => {
     const emailElement = screen.getByText("Email");
 
     expect(asFragment()).toMatchSnapshot();
-    expect(emailElement).toHaveAttribute("href");
+    expect(emailElement).toHaveAttribute(
+      "href",
+      "mailto:george@clubpenguin.com?subject=Interested%20in%201 Bed Flat&body=I%20have%20seen%20your%20property%20on%20Surreal%20Estate%2C%20and%20would%20like%20to%20request%20more%20information%20and%20arrange%20a%20viewing%20please."
+    );
   });
 });

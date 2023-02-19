@@ -21,7 +21,7 @@ exports[`PropertyCard renders bathrooms correctly 1`] = `
       £1000
     </p>
     <a
-      href="mailto:george@clubpenguin.com?subject=Interested%20in1 Bed Flat&body=I%20have%20seen%20your%20property%20on%20Surreal%20Estate%2C%20aPropend%20would%20like%20to%20request%20more%20information%20and%20arrange%20a%20viewing%20please."
+      href="mailto:george@clubpenguin.com?subject=Interested%20in%201 Bed Flat&body=I%20have%20seen%20your%20property%20on%20Surreal%20Estate%2C%20and%20would%20like%20to%20request%20more%20information%20and%20arrange%20a%20viewing%20please."
     >
       Email
     </a>
@@ -50,7 +50,7 @@ exports[`PropertyCard renders bedrooms correctly 1`] = `
       £1000
     </p>
     <a
-      href="mailto:george@clubpenguin.com?subject=Interested%20in1 Bed Flat&body=I%20have%20seen%20your%20property%20on%20Surreal%20Estate%2C%20aPropend%20would%20like%20to%20request%20more%20information%20and%20arrange%20a%20viewing%20please."
+      href="mailto:george@clubpenguin.com?subject=Interested%20in%201 Bed Flat&body=I%20have%20seen%20your%20property%20on%20Surreal%20Estate%2C%20and%20would%20like%20to%20request%20more%20information%20and%20arrange%20a%20viewing%20please."
     >
       Email
     </a>
@@ -79,7 +79,7 @@ exports[`PropertyCard renders city correctly 1`] = `
       £1000
     </p>
     <a
-      href="mailto:george@clubpenguin.com?subject=Interested%20in1 Bed Flat&body=I%20have%20seen%20your%20property%20on%20Surreal%20Estate%2C%20aPropend%20would%20like%20to%20request%20more%20information%20and%20arrange%20a%20viewing%20please."
+      href="mailto:george@clubpenguin.com?subject=Interested%20in%201 Bed Flat&body=I%20have%20seen%20your%20property%20on%20Surreal%20Estate%2C%20and%20would%20like%20to%20request%20more%20information%20and%20arrange%20a%20viewing%20please."
     >
       Email
     </a>
@@ -108,7 +108,7 @@ exports[`PropertyCard renders email correctly 1`] = `
       £1000
     </p>
     <a
-      href="mailto:george@clubpenguin.com?subject=Interested%20in1 Bed Flat&body=I%20have%20seen%20your%20property%20on%20Surreal%20Estate%2C%20aPropend%20would%20like%20to%20request%20more%20information%20and%20arrange%20a%20viewing%20please."
+      href="mailto:george@clubpenguin.com?subject=Interested%20in%201 Bed Flat&body=I%20have%20seen%20your%20property%20on%20Surreal%20Estate%2C%20and%20would%20like%20to%20request%20more%20information%20and%20arrange%20a%20viewing%20please."
     >
       Email
     </a>
@@ -137,7 +137,7 @@ exports[`PropertyCard renders price correctly 1`] = `
       £1000
     </p>
     <a
-      href="mailto:george@clubpenguin.com?subject=Interested%20in1 Bed Flat&body=I%20have%20seen%20your%20property%20on%20Surreal%20Estate%2C%20aPropend%20would%20like%20to%20request%20more%20information%20and%20arrange%20a%20viewing%20please."
+      href="mailto:george@clubpenguin.com?subject=Interested%20in%201 Bed Flat&body=I%20have%20seen%20your%20property%20on%20Surreal%20Estate%2C%20and%20would%20like%20to%20request%20more%20information%20and%20arrange%20a%20viewing%20please."
     >
       Email
     </a>
@@ -166,7 +166,7 @@ exports[`PropertyCard renders title correctly 1`] = `
       £1000
     </p>
     <a
-      href="mailto:george@clubpenguin.com?subject=Interested%20in1 Bed Flat&body=I%20have%20seen%20your%20property%20on%20Surreal%20Estate%2C%20aPropend%20would%20like%20to%20request%20more%20information%20and%20arrange%20a%20viewing%20please."
+      href="mailto:george@clubpenguin.com?subject=Interested%20in%201 Bed Flat&body=I%20have%20seen%20your%20property%20on%20Surreal%20Estate%2C%20and%20would%20like%20to%20request%20more%20information%20and%20arrange%20a%20viewing%20please."
     >
       Email
     </a>
@@ -195,7 +195,7 @@ exports[`PropertyCard renders type correctly 1`] = `
       £1000
     </p>
     <a
-      href="mailto:george@clubpenguin.com?subject=Interested%20in1 Bed Flat&body=I%20have%20seen%20your%20property%20on%20Surreal%20Estate%2C%20aPropend%20would%20like%20to%20request%20more%20information%20and%20arrange%20a%20viewing%20please."
+      href="mailto:george@clubpenguin.com?subject=Interested%20in%201 Bed Flat&body=I%20have%20seen%20your%20property%20on%20Surreal%20Estate%2C%20and%20would%20like%20to%20request%20more%20information%20and%20arrange%20a%20viewing%20please."
     >
       Email
     </a>
