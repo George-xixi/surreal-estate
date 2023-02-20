@@ -1,13 +1,29 @@
 /* eslint-disable no-console */
 import axios from "axios";
 import React, { useEffect, useState } from "react";
+import { useLocation } from "react-router-dom";
 import Alert from "./Alert";
 import PropertyCard from "./PropertyCard";
+import Sidebar from "./Sidebar";
 import "../styles/properties.css";
 
 const Properties = () => {
+  const { search } = useLocation();
   const [alert, setAlert] = useState({ message: "" });
   const [properties, setProperties] = useState([]);
+
+  useEffect(() => {
+    try {
+      axios
+        .get(`http://localhost:4000/api/v1/PropertyListing${search}`)
+        .then(({ data }) => setProperties(data));
+    } catch (e) {
+      setAlert({
+        message: "There was an error with your search. Please try again later.",
+      });
+    }
+  }, [search]);
+
   useEffect(() => {
     try {
       axios
@@ -22,6 +38,7 @@ const Properties = () => {
   return (
     <div className="properties">
       <h2 className="properties__heading">Properties</h2>
+      <Sidebar />
       <Alert message={alert.message} />
       {properties.map((property) => (
         <div key={property._id} className="card-div">
