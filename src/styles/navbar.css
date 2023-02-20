@@ -6,6 +6,7 @@
   width: 100%;
   display: inline-block;
   border-bottom: 3px solid rgb(61,78,58);
+  z-index: 100;
 }
 
 .home-icon {

@@ -2,12 +2,25 @@
   border-left: 3px solid rgb(61,78,58);
   padding-left:10px;
   font-size: 35px;
+  font-weight: 500;
 }
 
 .properties {
   position: absolute;
   margin-top: 100px;
   margin-left: 50px;
-  padding-left: 10px;
+  padding: 10px;
   color:rgb(61,78,58);
+}
+
+.card-div {
+  margin-inline: 10px;
+  display: inline-block;
+}
+
+
+@media (max-width: 600px) {
+  .properties {
+    margin-left: 10px;
+  }
 }

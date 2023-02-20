@@ -35,6 +35,15 @@
   padding-bottom:10px;
   font-size: inherit;
   font:inherit;
+  border-radius: 5px;
+}
+
+.add-property__form>div>input{
+  border:3px solid rgb(61,78,58);
+}
+
+.add-property__form>div>*>input,select{
+  border: 3px solid rgb(61,78,58);
 }
 
 .form__title {
@@ -71,6 +80,8 @@
 }
 .form__number-input>input {
   width: 100px;
+  border-radius: 5px;
+  border: 2px solid rgb(61,78,58);
 }
 
 .form__button{
@@ -89,8 +100,8 @@
 }
 
 .form__button>button:hover{
-  background-color: rgb(126, 125, 125);
-  border: 3px solid rgb(104, 96, 96);
+  background-color: rgb(61, 78, 58);
+  border: 3px solid rgb(61, 78, 58);
   color: whitesmoke;
 }
 

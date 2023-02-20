@@ -60,30 +60,6 @@ exports[`App renders app correctly 1`] = `
       >
         Properties
       </h2>
-      <div
-        class="property-card"
-      >
-        <h3>
-          title for property
-        </h3>
-        <p>
-          Manchester - Flat
-        </p>
-        <p>
-          Beds - 1
-        </p>
-        <p>
-          Baths - 2
-        </p>
-        <p>
-          £10000
-        </p>
-        <a
-          href="mailto:test@test.com?subject=Interested%20in%20title for property&body=I%20have%20seen%20your%20property%20on%20Surreal%20Estate%2C%20and%20would%20like%20to%20request%20more%20information%20and%20arrange%20a%20viewing%20please."
-        >
-          Email
-        </a>
-      </div>
     </div>
   </div>
 </DocumentFragment>
