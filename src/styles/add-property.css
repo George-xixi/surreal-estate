@@ -3,14 +3,14 @@
   margin-top: 100px;
   margin-left: 50px;
   padding-left: 10px;
-  color:rgb(61,78,58);
+  color:black;
 }
 
 .add-property__heading {
-  border-left: 3px solid rgb(61,78,58);
+  border-left: 5px solid black;
   padding-left:10px;
   font-size: 35px;
-  font-weight: 500;
+  font-weight: 800;
 }
 
 .add-property__form {
@@ -23,15 +23,17 @@
   max-inline-size: 600px;
 }
 
-.add-property__form>* {
+/* .add-property__form>div{
+  border-left: 3px solid rgb(61, 78, 58);
+} */
+.add-property__form>*>label {
   display:flex;
   flex-direction: column;
   padding-block: 10px;
-  border-left: 3px solid rgb(61,78,58);
   padding-left:7px;
 }
 
-.add-property__form>div>*{
+.add-property__form>div>label>*{
   min-height:30px;
   padding-bottom:10px;
   font-size: inherit;
@@ -39,12 +41,16 @@
   border-radius: 5px;
 }
 
-.add-property__form>div>input{
-  border:3px solid rgb(61,78,58);
+.add-property__form>div>label>input{
+  padding-left: 5px;
 }
 
 .add-property__form>div>*>input,select{
-  border: 3px solid rgb(61,78,58);
+  border: 0;
+  border-right: 3px solid grey;
+  border-bottom: 3px solid grey;
+  background-color:white;
+  color: black;
 }
 
 .form__title {
@@ -79,31 +85,34 @@
 .form__email-input{
   grid-column: 1 / 6;
 }
-.form__number-input>input {
+.form__number-input>label>input {
   width: 100px;
   border-radius: 5px;
-  border: 2px solid rgb(61,78,58);
 }
 
 .form__button{
   grid-column: 1 / span 5;
   height: min-content;
+  justify-self: center;
+  border: 0 !important;
 }
 
 .form__button>button {
-  border: 3px solid rgb(61, 78, 58);
+  border: 3px solid black;
+  background-color: black;
   border-radius: 5px;
   align-self: center;
   padding-inline: 50px;
   padding-block: 5px;
-  color: rgb(61, 78, 58);
+  color: white;
   cursor: pointer;
+  font-size: 25px;
 }
 
 .form__button>button:hover{
-  background-color: rgb(61, 78, 58);
-  border: 3px solid rgb(61, 78, 58);
-  color: whitesmoke;
+  background-color: #ffdf32;
+  border: 3px solid black;
+  color: black;
 }
 
 @media (max-width: 650px) {
@@ -123,5 +132,10 @@
     
     .form__selector {
       width: 100%;
+    }
+    
+    .form__button>button {
+      margin-inline: 25%;
+      margin-top: 15px;
     }
     }

@@ -60,6 +60,49 @@ exports[`App renders app correctly 1`] = `
       >
         Properties
       </h2>
+      <div
+        class="sidebar"
+      >
+        <input
+          class="toggle"
+          id="collapsible"
+          type="checkbox"
+        />
+        <label
+          class="sidebar__header"
+          for="collapsible"
+        >
+          Filter by :
+        </label>
+        <div
+          class="sidebar__div"
+        >
+          <a
+            class="sidebar__link"
+            href="/?query={\\"city\\": \\"Manchester\\"}"
+          >
+            Manchester
+          </a>
+          <a
+            class="sidebar__link"
+            href="/?query={\\"city\\": \\"Liverpool\\"}"
+          >
+            Liverpool
+          </a>
+          <a
+            class="sidebar__link"
+            href="/?query={\\"city\\": \\"Leeds\\"}"
+          >
+            Leeds
+          </a>
+          <a
+            class="sidebar__link"
+            href="/?query={\\"city\\": \\"Sheffield\\"}"
+          >
+            Sheffield
+          </a>
+        </div>
+      </div>
     </div>
   </div>
 </DocumentFragment>

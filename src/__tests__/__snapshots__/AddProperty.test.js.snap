@@ -17,15 +17,18 @@ exports[`AddProperty renders AddProperty page correctly 1`] = `
         class="form__title"
       >
         <label
+          data-testid="first-label"
           for="title"
         >
-          Give your listing a title
+          <p>
+            Give your listing a title
+          </p>
+          <input
+            id="title"
+            name="title"
+            value=""
+          />
         </label>
-        <input
-          id="title"
-          name="title"
-          value=""
-        />
       </div>
       <div
         class="form__selector selector__city"
@@ -33,33 +36,35 @@ exports[`AddProperty renders AddProperty page correctly 1`] = `
         <label
           for="city"
         >
-          City
+          <p>
+            City
+          </p>
+          <select
+            id="city"
+            name="city"
+          >
+            <option
+              value="Manchester"
+            >
+              Manchester
+            </option>
+            <option
+              value="Leeds"
+            >
+              Leeds
+            </option>
+            <option
+              value="Sheffield"
+            >
+              Sheffield
+            </option>
+            <option
+              value="Liverpool"
+            >
+              Liverpool
+            </option>
+          </select>
         </label>
-        <select
-          id="city"
-          name="city"
-        >
-          <option
-            value="Manchester"
-          >
-            Manchester
-          </option>
-          <option
-            value="Leeds"
-          >
-            Leeds
-          </option>
-          <option
-            value="Sheffield"
-          >
-            Sheffield
-          </option>
-          <option
-            value="Liverpool"
-          >
-            Liverpool
-          </option>
-        </select>
       </div>
       <div
         class="form__selector selector__type"
@@ -67,48 +72,50 @@ exports[`AddProperty renders AddProperty page correctly 1`] = `
         <label
           for="type"
         >
-          Type
+          <p>
+            Type
+          </p>
+          <select
+            id="type"
+            name="type"
+          >
+            <option
+              value="Flat"
+            >
+              Flat
+            </option>
+            <option
+              value="Detached"
+            >
+              Detached
+            </option>
+            <option
+              value="Semi-Detached"
+            >
+              Semi-Detached
+            </option>
+            <option
+              value="Terraced"
+            >
+              Terraced
+            </option>
+            <option
+              value="End of Terrace"
+            >
+              End of Terrace
+            </option>
+            <option
+              value="Cottage"
+            >
+              Cottage
+            </option>
+            <option
+              value="Bungalow"
+            >
+              Bungalow
+            </option>
+          </select>
         </label>
-        <select
-          id="type"
-          name="type"
-        >
-          <option
-            value="Flat"
-          >
-            Flat
-          </option>
-          <option
-            value="Detached"
-          >
-            Detached
-          </option>
-          <option
-            value="Semi-Detached"
-          >
-            Semi-Detached
-          </option>
-          <option
-            value="Terraced"
-          >
-            Terraced
-          </option>
-          <option
-            value="End of Terrace"
-          >
-            End of Terrace
-          </option>
-          <option
-            value="Cottage"
-          >
-            Cottage
-          </option>
-          <option
-            value="Bungalow"
-          >
-            Bungalow
-          </option>
-        </select>
       </div>
       <div
         class="form__number-input number__beds"
@@ -116,16 +123,18 @@ exports[`AddProperty renders AddProperty page correctly 1`] = `
         <label
           for="bedrooms"
         >
-          Beds
+          <p>
+            Beds
+          </p>
+          <input
+            id="bedrooms"
+            inputmode="numeric"
+            min="0"
+            name="bedrooms"
+            type="number"
+            value="0"
+          />
         </label>
-        <input
-          id="bedrooms"
-          inputmode="numeric"
-          min="0"
-          name="bedrooms"
-          type="number"
-          value="0"
-        />
       </div>
       <div
         class="form__number-input number__baths"
@@ -133,16 +142,18 @@ exports[`AddProperty renders AddProperty page correctly 1`] = `
         <label
           for="bathrooms"
         >
-          Baths
+          <p>
+            Baths
+          </p>
+          <input
+            id="bathrooms"
+            inputmode="numeric"
+            min="0"
+            name="bathrooms"
+            type="number"
+            value="0"
+          />
         </label>
-        <input
-          id="bathrooms"
-          inputmode="numeric"
-          min="0"
-          name="bathrooms"
-          type="number"
-          value="0"
-        />
       </div>
       <div
         class="form__number-input number__price"
@@ -150,16 +161,18 @@ exports[`AddProperty renders AddProperty page correctly 1`] = `
         <label
           for="price"
         >
-          Price
+          <p>
+            Price
+          </p>
+          <input
+            id="price"
+            inputmode="numeric"
+            min="0"
+            name="price"
+            type="number"
+            value="0"
+          />
         </label>
-        <input
-          id="price"
-          inputmode="numeric"
-          min="0"
-          name="price"
-          type="number"
-          value="0"
-        />
       </div>
       <div
         class="form__email-input"
@@ -167,13 +180,15 @@ exports[`AddProperty renders AddProperty page correctly 1`] = `
         <label
           for="email"
         >
-          Email
+          <p>
+            Email
+          </p>
+          <input
+            id="email"
+            name="email"
+            value=""
+          />
         </label>
-        <input
-          id="email"
-          name="email"
-          value=""
-        />
       </div>
       <div
         class="form__button"

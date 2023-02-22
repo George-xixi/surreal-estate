@@ -1,11 +1,11 @@
 .navbar {
   background-color: white;
-  color:rgb(61,78,58);
+  color: black;
   position: fixed;
   padding-block:5px;
   width: 100%;
   display: inline-block;
-  border-bottom: 3px solid rgb(61,78,58);
+  border-bottom: 3px solid black;
   z-index: 100;
 }
 
@@ -19,7 +19,7 @@
   padding-inline: 10px;
   vertical-align: middle;
   font-size: 25px;
-  border-right: 3px solid rgb(61,78,58);
+  border-right: 3px solid black;
 }
 
 .navbar-links {
@@ -34,24 +34,25 @@
   vertical-align: middle;
   padding-inline: 10px;
   font-size: 22px;
+  font-weight: 500;
   padding-left: 25px;
 }
 
 .navbar-links-item>a {
   text-decoration: none;
-  color: rgb(61,78,58);
+  color: black;
   transition: 300ms;
 }
 
 .navbar-links-item>a:after {
   content: '';
   width: 0px;
-  height: 3px;
+  height: 5px;
   display: block;
   position: relative;
   inset-inline-start: 50%;
   transform: translate(-50%, 0);
-  background-color: rgb(61,78,58);
+  background-color: black;
   transition: 300ms;
 }
 

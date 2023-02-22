@@ -11,10 +11,11 @@ describe("AddProperty", () => {
       </BrowserRouter>
     );
     const headingElement = screen.getByText("Add Property");
+    const firstLabelElement = screen.getByTestId("first-label");
     const formFirstQuestion = screen.getByText("Give your listing a title");
 
     expect(asFragment()).toMatchSnapshot();
     expect(headingElement).toBeInTheDocument();
-    expect(formFirstQuestion).toHaveAttribute("for", "title");
+    expect(firstLabelElement).toContainElement(formFirstQuestion);
   });
 });
