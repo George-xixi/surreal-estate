@@ -1,66 +1,97 @@
-/* eslint-disable jsx-a11y/label-has-associated-control */
-import React from "react";
-import { Link, useLocation } from "react-router-dom";
+import React, { useState } from "react";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import qs from "qs";
 import "../styles/sidebar.css";
 
-const buildQueryString = (operation, valueObj) => {
-  const { search } = useLocation();
-
-  const currentQueryParams = qs.parse(search, { ignoreQueryPrefix: true });
-  const newQueryParams = {
-    ...currentQueryParams,
-    [operation]: JSON.stringify(valueObj),
-  };
-  return qs.stringify(newQueryParams, { addQueryPrefix: true, encode: false });
-};
-
 const Sidebar = () => {
+  const { search } = useLocation();
+  const [query, setQuery] = useState();
+
+  const buildQueryString = (operation, valueObj) => {
+    const currentQueryParams = qs.parse(search, { ignoreQueryPrefix: true });
+    const newQueryParams = {
+      ...currentQueryParams,
+      [operation]: JSON.stringify({
+        ...JSON.parse(currentQueryParams[operation] || "{}"),
+        ...valueObj,
+      }),
+    };
+
+    return qs.stringify(newQueryParams, {
+      addQueryPrefix: true,
+      encode: false,
+    });
+  };
+
+  const navigate = useNavigate();
+
+  const handleSearch = (event) => {
+    event.preventDefault();
+    const newQueryString = buildQueryString("query", {
+      title: { $regex: query },
+    });
+    navigate(newQueryString);
+  };
+
   return (
     <div className="sidebar">
-      <input id="collapsible" className="toggle" type="checkbox" />
-      <label htmlFor="collapsible" className="sidebar__header">
-        Filter by :
-      </label>
+      <form className="sidebar__form" onSubmit={handleSearch}>
+        <label htmlFor="search">
+          <h3 className="sidebar__header">Search for a property</h3>
+          <input
+            id="search"
+            name="search"
+            type="text"
+            value={query}
+            onChange={(e) => setQuery(e.target.value)}
+          />
+        </label>
+        <button type="submit">Search</button>
+      </form>
+      <h3 className="sidebar__header">Filter by :</h3>
       <div className="sidebar__links">
-        <h3>City</h3>
-        <Link
-          className="sidebar__link"
-          to={buildQueryString("query", { city: "Manchester" })}
-        >
-          Manchester
-        </Link>
-        <Link
-          className="sidebar__link"
-          to={buildQueryString("query", { city: "Liverpool" })}
-        >
-          Liverpool
-        </Link>
-        <Link
-          className="sidebar__link"
-          to={buildQueryString("query", { city: "Leeds" })}
-        >
-          Leeds
-        </Link>
-        <Link
-          className="sidebar__link"
-          to={buildQueryString("query", { city: "Sheffield" })}
-        >
-          Sheffield
-        </Link>
-        <h3>Price</h3>
-        <Link
-          className="sidebar__link"
-          to={buildQueryString("sort", { price: 1 })}
-        >
-          high to low
-        </Link>
-        <Link
-          className="sidebar__link"
-          to={buildQueryString("sort", { price: -1 })}
-        >
-          low to high
-        </Link>
+        <div className="sidebar__links__city">
+          <h4>City</h4>
+          <Link
+            className="sidebar__link"
+            to={buildQueryString("query", { city: "Manchester" })}
+          >
+            Manchester
+          </Link>
+          <Link
+            className="sidebar__link"
+            to={buildQueryString("query", { city: "Liverpool" })}
+          >
+            Liverpool
+          </Link>
+          <Link
+            className="sidebar__link"
+            to={buildQueryString("query", { city: "Leeds" })}
+          >
+            Leeds
+          </Link>
+          <Link
+            className="sidebar__link"
+            to={buildQueryString("query", { city: "Sheffield" })}
+          >
+            Sheffield
+          </Link>
+        </div>
+        <div className="sidebar__links__price">
+          <h4>Price</h4>
+          <Link
+            className="sidebar__link"
+            to={buildQueryString("sort", { price: 1 })}
+          >
+            High to low
+          </Link>
+          <Link
+            className="sidebar__link"
+            to={buildQueryString("sort", { price: -1 })}
+          >
+            Low to high
+          </Link>
+        </div>
       </div>
     </div>
   );

@@ -63,62 +63,88 @@ exports[`App renders app correctly 1`] = `
       <div
         class="sidebar"
       >
-        <input
-          class="toggle"
-          id="collapsible"
-          type="checkbox"
-        />
-        <label
+        <form
+          class="sidebar__form"
+        >
+          <label
+            for="search"
+          >
+            <h3
+              class="sidebar__header"
+            >
+              Search for a property
+            </h3>
+            <input
+              id="search"
+              name="search"
+              type="text"
+              value=""
+            />
+          </label>
+          <button
+            type="submit"
+          >
+            Search
+          </button>
+        </form>
+        <h3
           class="sidebar__header"
-          for="collapsible"
         >
           Filter by :
-        </label>
+        </h3>
         <div
           class="sidebar__links"
         >
-          <h3>
-            City
-          </h3>
-          <a
-            class="sidebar__link"
-            href="/?query={\\"city\\":\\"Manchester\\"}"
+          <div
+            class="sidebar__links__city"
           >
-            Manchester
-          </a>
-          <a
-            class="sidebar__link"
-            href="/?query={\\"city\\":\\"Liverpool\\"}"
+            <h4>
+              City
+            </h4>
+            <a
+              class="sidebar__link"
+              href="/?query={\\"city\\":\\"Manchester\\"}"
+            >
+              Manchester
+            </a>
+            <a
+              class="sidebar__link"
+              href="/?query={\\"city\\":\\"Liverpool\\"}"
+            >
+              Liverpool
+            </a>
+            <a
+              class="sidebar__link"
+              href="/?query={\\"city\\":\\"Leeds\\"}"
+            >
+              Leeds
+            </a>
+            <a
+              class="sidebar__link"
+              href="/?query={\\"city\\":\\"Sheffield\\"}"
+            >
+              Sheffield
+            </a>
+          </div>
+          <div
+            class="sidebar__links__price"
           >
-            Liverpool
-          </a>
-          <a
-            class="sidebar__link"
-            href="/?query={\\"city\\":\\"Leeds\\"}"
-          >
-            Leeds
-          </a>
-          <a
-            class="sidebar__link"
-            href="/?query={\\"city\\":\\"Sheffield\\"}"
-          >
-            Sheffield
-          </a>
-          <h3>
-            Price
-          </h3>
-          <a
-            class="sidebar__link"
-            href="/?sort={\\"price\\":1}"
-          >
-            high to low
-          </a>
-          <a
-            class="sidebar__link"
-            href="/?sort={\\"price\\":-1}"
-          >
-            low to high
-          </a>
+            <h4>
+              Price
+            </h4>
+            <a
+              class="sidebar__link"
+              href="/?sort={\\"price\\":1}"
+            >
+              High to low
+            </a>
+            <a
+              class="sidebar__link"
+              href="/?sort={\\"price\\":-1}"
+            >
+              Low to high
+            </a>
+          </div>
         </div>
       </div>
     </div>

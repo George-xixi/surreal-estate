@@ -23,9 +23,6 @@
   max-inline-size: 600px;
 }
 
-/* .add-property__form>div{
-  border-left: 3px solid rgb(61, 78, 58);
-} */
 .add-property__form>*>label {
   display:flex;
   flex-direction: column;
@@ -49,7 +46,6 @@
   border: 0;
   border-right: 3px solid grey;
   border-bottom: 3px solid grey;
-  background-color:white;
   color: black;
 }
 
