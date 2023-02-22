@@ -56,7 +56,50 @@
   transition: 300ms;
 }
 
-
 .navbar-links-item>a:hover::after {
   width: 100%;
+}
+
+.fb-button {
+  display: inline;
+  float: right;
+}
+
+.fb-logout-button{
+  background-color: rgb(57, 117, 234);
+  color: white;
+  font-size: 15px;
+  border: 0;
+  border-radius: 5px;
+  font-family: "Inter", sans-serif;
+  padding: 10px 10px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.my-facebook-button-class{
+  background-color: rgb(57, 117, 234);
+  color: white;
+  font-size: 15px;
+  border: 0;
+  border-radius: 5px;
+  font-family: "Inter", sans-serif;
+  padding: 10px 10px;
+  font-weight: 800;
+  cursor: pointer;
+  text-transform:lowercase;
+}
+
+.fb-icon {
+  vertical-align: -10%;
+  font-size: 15px;
+  padding-right: 10px;
+}
+
+@media (max-width: 650px) {
+  .fb-button {
+    position: fixed;
+    top: 0;
+    right: 0;
+  }
 }
