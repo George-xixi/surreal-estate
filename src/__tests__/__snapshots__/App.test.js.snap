@@ -75,31 +75,49 @@ exports[`App renders app correctly 1`] = `
           Filter by :
         </label>
         <div
-          class="sidebar__div"
+          class="sidebar__links"
         >
+          <h3>
+            City
+          </h3>
           <a
             class="sidebar__link"
-            href="/?query={\\"city\\": \\"Manchester\\"}"
+            href="/?query={\\"city\\":\\"Manchester\\"}"
           >
             Manchester
           </a>
           <a
             class="sidebar__link"
-            href="/?query={\\"city\\": \\"Liverpool\\"}"
+            href="/?query={\\"city\\":\\"Liverpool\\"}"
           >
             Liverpool
           </a>
           <a
             class="sidebar__link"
-            href="/?query={\\"city\\": \\"Leeds\\"}"
+            href="/?query={\\"city\\":\\"Leeds\\"}"
           >
             Leeds
           </a>
           <a
             class="sidebar__link"
-            href="/?query={\\"city\\": \\"Sheffield\\"}"
+            href="/?query={\\"city\\":\\"Sheffield\\"}"
           >
             Sheffield
+          </a>
+          <h3>
+            Price
+          </h3>
+          <a
+            class="sidebar__link"
+            href="/?sort={\\"price\\":1}"
+          >
+            high to low
+          </a>
+          <a
+            class="sidebar__link"
+            href="/?sort={\\"price\\":-1}"
+          >
+            low to high
           </a>
         </div>
       </div>

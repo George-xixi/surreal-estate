@@ -26,18 +26,16 @@
   font-weight: 600;
   color: white;
   cursor: pointer;
-  transition: 0.25s ease-in-out;
 }
 
-.sidebar__div{
+.sidebar__links{
   max-height: 0px;
   overflow: hidden;
-  transition: max-height 0.25s ease-in-out;
 }
-
-.toggle:checked + .sidebar__header + .sidebar__div {
+.toggle:checked + .sidebar__header + .sidebar__links{
   max-height: fit-content;
 }
+
 
 .sidebar__link {
   text-decoration: none;
