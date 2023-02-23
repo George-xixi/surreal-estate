@@ -38,13 +38,17 @@ const Properties = () => {
   return (
     <div className="properties">
       <h2 className="properties__heading">Properties</h2>
-      <Sidebar />
+      <div className="properties__search">
+        <Sidebar />
+      </div>
       <Alert message={alert.message} />
-      {properties.map((property) => (
-        <div key={property._id} className="card-div">
-          <PropertyCard key={property._id} details={property} />
-        </div>
-      ))}
+      <div className="properties__results">
+        {properties.map((property) => (
+          <div key={property._id} className="card-div">
+            <PropertyCard key={property._id} details={property} />
+          </div>
+        ))}
+      </div>
     </div>
   );
 };

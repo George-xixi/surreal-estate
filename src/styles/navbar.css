@@ -5,7 +5,6 @@
   padding-block:5px;
   width: 100%;
   display: inline-block;
-  border-bottom: 3px solid black;
   z-index: 100;
 }
 
@@ -19,14 +18,13 @@
   padding-inline: 10px;
   vertical-align: middle;
   font-size: 25px;
-  border-right: 3px solid black;
 }
 
 .navbar-links {
   list-style: none;
   display: inline-block;
   padding-inline: 10px;
-  vertical-align: middle;
+  vertical-align: -3px;
 }
 
 .navbar-links-item {
@@ -68,7 +66,7 @@
 .fb-logout-button{
   background-color: rgb(57, 117, 234);
   color: white;
-  font-size: 15px;
+  font-size: 13px;
   border: 0;
   border-radius: 5px;
   font-family: "Inter", sans-serif;
@@ -83,6 +81,7 @@
   font-size: 15px;
   border: 0;
   border-radius: 5px;
+  margin-right:5px;
   font-family: "Inter", sans-serif;
   padding: 10px 10px;
   font-weight: 800;

@@ -1,20 +1,28 @@
 .properties {
-  position: absolute;
-  margin-top: 100px;
-  margin-left: 50px;
-  padding-left: 10px;
-  color: black;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: flex-end;
+  max-width: 100%;
 }
 
 .properties__heading{
   border-left: 5px solid black;
+  margin-left: 60px;
   padding-left:10px;
   font-size: 35px;
   font-weight: 800;
   width: 100%;
+  visibility: collapse;
+}
+
+.properties__search{
+  width: 100%;
+  margin: auto;
+}
+
+.properties__results {
+  margin-top: -100px;
+  margin-inline: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
 }
 .card-div {
   margin-inline: 10px;

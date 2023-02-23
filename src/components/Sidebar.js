@@ -37,7 +37,7 @@ const Sidebar = () => {
     <div className="sidebar">
       <form className="sidebar__form" onSubmit={handleSearch}>
         <label htmlFor="search">
-          <h3 className="sidebar__header">Search for a property</h3>
+          <h3 className="sidebar-search__header">Search for a property</h3>
           <input
             id="search"
             name="search"
@@ -48,10 +48,10 @@ const Sidebar = () => {
         </label>
         <button type="submit">Search</button>
       </form>
-      <h3 className="sidebar__header">Filter by :</h3>
+      <h3 className="sidebar-filter__header">Filter by :</h3>
       <div className="sidebar__links">
         <div className="sidebar__links__city">
-          <h4>City</h4>
+          <h4>Filter City</h4>
           <Link
             className="sidebar__link"
             to={buildQueryString("query", { city: "Manchester" })}
