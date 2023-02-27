@@ -39,7 +39,7 @@ const AddProperty = () => {
       <Alert message={alert.message} success={alert.isSuccess} />
       <form onSubmit={handleAddProperty} className="add-property__form">
         <div className="form__title">
-          <label htmlFor="title" data-testId="first-label">
+          <label htmlFor="title" data-testid="first-label">
             <p>Give your listing a title</p>
             <input
               id="title"

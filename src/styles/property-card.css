@@ -21,14 +21,31 @@
   border: 3px solid rgb(31, 23, 23);
   background-color: rgb(31, 23, 23);
   border-radius: 5px;
-  padding-inline:30px;
-  padding-block: 5px;
+  padding: 5px 30px 5px 30px;
   font-weight: 700;
   color: white;
   cursor: pointer;
 }
 
 .mail-to:hover {
+  background-color: transparent;
+  border: 3px solid black;
+  color: black;
+}
+
+.save-button {
+  border: 3px solid rgb(31, 23, 23);
+  background-color: rgb(31, 23, 23);
+  border-radius: 5px;
+  padding: 5px 30px 5px 30px;
+  margin-left: 10px;
+  font-weight: 700;
+  font-size: 17px;
+  color: white;
+  cursor: pointer;
+}
+
+.save-button:hover {
   background-color: transparent;
   border: 3px solid black;
   color: black;

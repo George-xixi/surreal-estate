@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import "../styles/property-card.css";
 
-const PropertyCard = ({ details }) => {
+const PropertyCard = ({ details, userID, onSaveProperty, _id }) => {
   const { title, city, type, bedrooms, bathrooms, price, email } = details;
   const mailTo = `mailto:${email}?subject=Interested%20in%20${title}&body=I%20have%20seen%20your%20property%20on%20Surreal%20Estate%2C%20and%20would%20like%20to%20request%20more%20information%20and%20arrange%20a%20viewing%20please.`;
   return (
@@ -17,6 +17,15 @@ const PropertyCard = ({ details }) => {
       <a className="mail-to" href={mailTo}>
         Email
       </a>
+      {userID && (
+        <button
+          type="button"
+          onClick={() => onSaveProperty(_id)}
+          className="save-button"
+        >
+          Fave
+        </button>
+      )}
     </div>
   );
 };
@@ -31,6 +40,9 @@ PropertyCard.propTypes = {
     price: PropTypes.number.isRequired,
     email: PropTypes.string.isRequired,
   }).isRequired,
+  userID: PropTypes.string.isRequired,
+  onSaveProperty: PropTypes.func.isRequired,
+  _id: PropTypes.string.isRequired,
 };
 
 export default PropertyCard;
