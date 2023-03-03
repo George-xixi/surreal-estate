@@ -4,7 +4,7 @@ This is a property search engine built using react.js. It is part of the front e
 
 
 I will put screenshots of the project here:
-<img src="./images/screenshot-landing.png" width="500">
+<img src="./images/screenshot-landing.png" width="700">
 
 
 ## What is this?
