@@ -2,38 +2,27 @@
 
 This is a property search engine built using react.js. It is part of the front end module at [Command Shift](https://www.commandshift.co/). 
 
-This project has only just been started, and the README will be updated as the project grows.
 
 I will put screenshots of the project here:
+<img src="./images/screenshot-landing.png" width="500">
 
-I will add a screenshot of the mobile view here:
 
-## The task requirements
+## What is this?
 
-- Build a single page React web application.
+- A single page React web application.
 
-- A search function that allows users to search all properties and filter results.
+- There is search function that allows users to search all properties and filter results.
 
 - An add property page where you will add new properties.
 
-- A property page.
+- Uses React Router to define and navigate between routes.
 
-- Interact with an API to get the properties.
-
-### Further requirements
-
-- Create React Router to define and navigate between routes.
-
-- Create forms in react.
-
-- Make requests in Postman to an external API and translate these requests into my React application.
-
-- Implement 3rd party authentication.
+- Allows users to log in with Facebook.
 
 
 ## API
 
-This app uses an API, I will update with more info soon.
+This app uses the [Surreal Estate API](https://github.com/CommandShiftHQ/surreal-estate-api) created by [Command Shift](https://www.commandshift.co/).
 
 ## Testing
 This app is tested with [Jest](https://jestjs.io/) and [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/).
@@ -41,6 +30,8 @@ This app is tested with [Jest](https://jestjs.io/) and [React Testing Library](h
 ## Packages
 - [PropTypes](https://www.npmjs.com/package/prop-types)
 - [React Icons](https://react-icons.github.io/react-icons/)
+- [Axios](https://www.npmjs.com/package/axios)
+- [Facebook Login](https://github.com/keppelen/react-facebook-login)
 
 
 ## How to use
@@ -70,7 +61,9 @@ npm test
 ```
 
 ## If I had more time...
-Once I have finished the project, I will reflect here on what more I would do if I had more time.
+- I would add responsive styling, as the web app currently doesn't render properly on mobile. 
+- I would write more comprehensive tests.
+
 
 ## Thanks
 
